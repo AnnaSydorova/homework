@@ -1,0 +1,204 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+ box-sizing: inherit;  
+ /* для того, чтобы тект нормально себя вёл */
+}
+
+
+  
+ body {
+     font-size: 16px;
+     line-height: 1;
+ }
+ 
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+ #wrapper {
+     position: relative;
+     width: 100%;
+     
+ }
+
+ .poker-box {
+     position: relative;
+     background: #0d5825;
+     height: 800px;
+     width: 900px;
+ }
+
+ .blockquote {
+     font-size: 25px;
+     text-align: center;
+     color: white;
+    padding-top: 10px;
+ }
+ 
+ 
+ 
+.card2 {
+    top: 52%;
+     left: 41%;
+     height: 220px;
+     width: 150px;
+     transform: rotate(-10deg);
+     position: absolute;
+     transition: 1s;
+}
+
+.card3 {
+    top: 51%;
+     right: 47%;
+     height:220px ;
+     width: 150px;
+     transform: rotate(-17deg);
+     position: absolute;
+     transition: 1s;
+}
+
+.card1 {
+    top: 53%;
+     left: 47%;
+     height: 220px;
+     width: 150px;
+     transform: rotate(2deg);
+     position: absolute;
+     transition: 1s;
+}
+
+.card1:hover{
+    transform: translateX(0px) translateY(-60px) rotate(2deg);
+    transition: 1s;
+}
+
+.card2:hover {
+    transform: translateX(0px) translateY(-60px) rotate(-10deg);
+    transition: 1s;
+}
+.card3:hover {
+    transform: translateX(0px) translateY(-60px) rotate(-17deg);
+    transition: 1s;
+}
+
+.box {
+    margin-top: 50px;
+    margin-left: 50px;
+    position: relative;
+    
+}
+
+.abs1 {
+    height: 60px;
+    width: 60px;
+    background: pink;
+    position: absolute;
+    z-index: 500;
+}
+
+.abs2 {
+    height: 60px;
+    width: 60px;
+    background: skyblue;
+    transform: translate(60%, 60%);
+    position: absolute;
+}
+
+.abs3 {
+    
+    height: 60px;
+    width: 60px;
+    background:lightgreen;
+    transform: translate(-60%, -60%);
+    position: absolute;
+    
+}
+
+.menu {
+    margin-top: 200px;
+}
+.list {
+    list-style-type: square;
+    position: absolute;
+    padding: 0 0 0 50px;
+    text-decoration: none;
+    display: none;
+    color: orange;
+ }
+ 
+ .link {
+    color: white;
+    text-decoration: none;
+    display: none;
+    padding: 0 0 15px;
+ }
+ 
+ .link:hover {
+    color: orange;
+ }
+ 
+ .here {
+    transform: rotate(90deg);
+    transform-origin: center top 0;
+    float: left;
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    margin-top: 200px;
+    left: -20px;
+    color: #fff;
+ }
+ 
+ 
+ .menu:hover .here {
+    visibility: hidden;
+ }
+ 
+ .menu {
+    
+    background-color: grey;
+    width: 50px;
+    height: 400px;
+    transition: width 0.5s ease 50ms;
+   
+ }
+ 
+ .menu:hover {
+    width: 200px;
+ }
+ 
+ .menu:hover .list {
+    transition: all 0.5s ease;
+    display: block;
+ }
+ 
+ .menu:hover .link {
+    transition: all 0.5s ease;
+    display: block;
+ }
+
+ @keyframes transform {
+    0% {transform: translateY(0); background-color: violet;}
+    25% {transform: translateY(400px);background-color:	#C8A2C8 }
+    50% {transform: translateX(400px) translateY(400px); background-color: darkorchid;}
+    75% {transform: translateY(0) translateX(400px); background-color:darkmagenta;}
+ }
+ 
+ .animation{
+     margin-top: 50px;
+     height: 500px;
+     width: 500px;
+ }
+
+ .color {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    animation: transform 4s cubic-bezier(0.1,0.25,0.1,1) 0s infinite;
+    }
+ 

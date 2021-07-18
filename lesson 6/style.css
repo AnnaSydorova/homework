@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+ box-sizing: inherit;  
+ /* для того, чтобы тект нормально себя вёл */
+}
+
+
+  
+ body {
+     font-size: 16px;
+     line-height: 1;
+     margin: 0;
+ }
+ 
+ #wrapper {
+     position: relative;
+     width: 100%;
+     overflow-x: hidden;
+     background:white;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+ }

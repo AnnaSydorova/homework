@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+ box-sizing: inherit;  
+ /* для того, чтобы тект нормально себя вёл */
+}
+
+
+  
+ body {
+     font-size: 16px;
+     line-height: 1;
+     margin: 0;
+ }
+ 
+ #wrapper {
+     position: relative;
+     width: 100%;
+     overflow-x: hidden;
+     background:white;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+ }
+
+.holder {
+max-width: 300px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+align-content: flex-start;
+margin-left: 15px;
+margin-top: 15px;
+border: 1px solid #000;
+border-radius: 10px 10px 0 0;
+
+}
+ .item:nth-child(1) {
+     background: coral;
+    flex:  0 1 50%;
+    border-radius: 9px 0 0 0;
+ }
+
+ .item:nth-child(5) {
+    background:yellow;
+    order: 3;
+    flex:  0 1 50%;
+    border-radius: 0 9px 0 0;
+
+}
+.item:nth-child(2) {
+    background: blue;
+    order: 5;
+    flex-grow: 1;
+    
+}
+
+.item:nth-child(3) {
+        background: violet;
+        order: 4;
+        flex-grow: 1;
+        
+}
+
+.item:nth-child(4) {
+    background: green;
+    order: 5;
+    flex-grow: 1;
+    
+}
+
+
+
+
+
+
+.holder {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+    border-radius: 10px 10px 0 0;
+    
+    }
+     .item:nth-child(1) {
+         background: coral;
+        flex:  0 1 50%;
+        border-radius: 9px 0 0 0;
+     }
+    
+     .item:nth-child(5) {
+        background:yellow;
+        order: 3;
+        flex:  0 1 50%;
+        border-radius: 0 9px 0 0;
+    
+    }
+    .item:nth-child(2) {
+        background: blue;
+        order: 5;
+        flex-grow: 1;
+        
+    }
+    
+    .item:nth-child(3) {
+            background: violet;
+            order: 4;
+            flex-grow: 1;
+            
+    }
+    
+    .item:nth-child(4) {
+        background: green;
+        order: 5;
+        flex-grow: 1;
+        
+    }
+     
